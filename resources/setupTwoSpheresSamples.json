@@ -1,0 +1,16 @@
+{
+"camera": {
+    "lookFrom": [0.0, 0.0, 2.0],
+    "lookAt:": [0, 0, -1],
+    "vup": [0, 1, 0],
+    "vfov": 90.0,
+    "aspectRatio": 1.77,
+    "pixelsX": 400
+},
+ "background": true,
+ "MAXDEPTH": 0,
+ "colorTopBackground": [0.5, 0.7, 1],
+ "colorDownBackground": [ 1.0, 1.0, 1.0],
+ "shading": "Color",
+ "numSamples" : 1
+}

@@ -1,0 +1,23 @@
+{
+"scene": "Cilindre Torn",
+"typeScene": "VIRTUAL",
+"objects": [
+{
+  "name": "cilindre",
+  "type": "cylinder",
+  "center": [0.0, -1.0, 0.0],
+  "radius": 1,
+  "h": 2,
+  "axis": [0.0,1.0,1.0],
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [1.0, 0.0, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+}
+]
+}

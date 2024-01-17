@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Tracer Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="valWidth">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>500</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="valSamples">
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Height:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Width:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="valHeight">
+         <property name="maximum">
+          <number>5000</number>
+         </property>
+         <property name="value">
+          <number>250</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="backGround">
+         <property name="text">
+          <string>Background</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="ColorTop">
+         <property name="text">
+          <string>Color Top</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="ColorBottom">
+         <property name="text">
+          <string>Color Bottom</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Samples:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>MAXDEPTH</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="valMaxDepth">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Advanced Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="valShadows">
+         <property name="text">
+          <string>Shadows</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="valRefractions">
+         <property name="text">
+          <string>Refractions</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QPushButton" name="buttonCamera">
+         <property name="text">
+          <string>Camera</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="valReflections">
+         <property name="text">
+          <string>Reflections</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="valTextures">
+         <property name="text">
+          <string>Textures</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QPushButton" name="lampButton">
+         <property name="text">
+          <string>New Lamp</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonTrace">
+      <property name="text">
+       <string>Trace</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew_Sphere"/>
+    <addaction name="actionNew_Triangle"/>
+    <addaction name="actionNew_Box"/>
+    <addaction name="actionNew_Mesh"/>
+    <addaction name="actionNew_Cylinder"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerate_Scene"/>
+    <addaction name="actionOpen_Virtual_Scene"/>
+    <addaction name="actionOpen_Data"/>
+    <addaction name="separator"/>
+    <addaction name="actionTracing_Settings"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionStart_and_Save_Animation"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>&amp;About</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuShadings">
+    <property name="title">
+     <string>Shadings</string>
+    </property>
+    <addaction name="actionColor_Shading"/>
+    <addaction name="actionDepth_Shading"/>
+    <addaction name="actionNormal_Shading"/>
+    <addaction name="actionPhong_Shading"/>
+    <addaction name="actionBlinn_Phong"/>
+    <addaction name="separator"/>
+    <addaction name="actionCell_Shading"/>
+    <addaction name="actionGooch_Shading"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuShadings"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>&amp;Save Frame as an Image</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionGenerate_Scene">
+   <property name="text">
+    <string>Simulated Scene</string>
+   </property>
+  </action>
+  <action name="actionTracing_Settings">
+   <property name="text">
+    <string>Load SetUp</string>
+   </property>
+  </action>
+  <action name="actionOpen_Data">
+   <property name="text">
+    <string>Open Data File</string>
+   </property>
+  </action>
+  <action name="actionStart_and_Save_Animation">
+   <property name="text">
+    <string>Start and Save Animation</string>
+   </property>
+  </action>
+  <action name="actionOpen_Virtual_Scene">
+   <property name="text">
+    <string>Open Virtual Scene</string>
+   </property>
+  </action>
+  <action name="actionDepth_Shading">
+   <property name="text">
+    <string>Depth Shading</string>
+   </property>
+  </action>
+  <action name="actionNormal_Shading">
+   <property name="text">
+    <string>Normal Shading</string>
+   </property>
+  </action>
+  <action name="actionPhong_Shading">
+   <property name="text">
+    <string>Phong</string>
+   </property>
+  </action>
+  <action name="actionBlinn_Phong">
+   <property name="text">
+    <string>Blinn-Phong</string>
+   </property>
+  </action>
+  <action name="actionCell_Shading">
+   <property name="text">
+    <string>Cell Shading</string>
+   </property>
+  </action>
+  <action name="actionGooch_Shading">
+   <property name="text">
+    <string>Gooch Shading</string>
+   </property>
+  </action>
+  <action name="actionColor_Shading">
+   <property name="text">
+    <string>Color Shading</string>
+   </property>
+  </action>
+  <action name="actionNew_Sphere">
+   <property name="text">
+    <string>New PC</string>
+   </property>
+  </action>
+  <action name="actionNew_Triangle">
+   <property name="text">
+    <string>New Triangle</string>
+   </property>
+  </action>
+  <action name="actionNew_Cylinder">
+   <property name="text">
+    <string>New Cylinder</string>
+   </property>
+  </action>
+  <action name="actionNew_Box">
+   <property name="text">
+    <string>New Box</string>
+   </property>
+  </action>
+  <action name="actionNew_Mesh">
+   <property name="text">
+    <string>New Mesh</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>valWidth</tabstop>
+  <tabstop>valHeight</tabstop>
+  <tabstop>valSamples</tabstop>
+  <tabstop>valShadows</tabstop>
+  <tabstop>valRefractions</tabstop>
+  <tabstop>valReflections</tabstop>
+  <tabstop>valTextures</tabstop>
+  <tabstop>buttonCamera</tabstop>
+  <tabstop>lampButton</tabstop>
+  <tabstop>buttonTrace</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

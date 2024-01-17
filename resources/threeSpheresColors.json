@@ -1,0 +1,54 @@
+{
+"scene": "Esferes",
+"typeScene": "VIRTUAL",
+"objects": [
+{
+  "name": "Esfera petita",
+  "type": "sphere",
+  "center": [0.0, 0.0, 0.0],
+  "radius": 0.5,
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.8, 0.1, 0.1],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 50.0,
+    "shininess2": 25.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "Esfera mitjana",
+  "type": "sphere",
+  "center": [-3.0, 1.0, 0.0],
+  "radius": 1.0,
+  "material": {
+    "type": "metal",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.2, 0.2, 0.9],
+    "ks": [0.7, 0.7, 0.7],
+    "shininess": 100.0,
+    "shininess2": 50.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+   }
+},
+{
+  "name": "Esfera gran",
+  "type": "sphere",
+  "center": [0.0,-100.5,-1.0],
+  "radius": 100.0,
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.8, 0.8, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "shininess2": 5.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+}
+]
+}

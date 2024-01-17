@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/cube.obj</file>
+        <file>resources/cube2.obj</file>
+        <file>resources/mapBCN.png</file>
+        <file>resources/mapBCNNos.png</file>
+        <file>resources/europa.png</file>
+        <file>resources/mapZoom.png</file>
+    </qresource>
+</RCC>

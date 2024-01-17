@@ -1,0 +1,57 @@
+{
+"scene": "Cilindres",
+"typeScene": "VIRTUAL",
+"objects": [
+{
+  "name": "cilindre1",
+  "type": "cylinder",
+  "center": [0.0, -50.0, 0.0],
+  "radius": 0.01,
+  "h": 100,
+  "axis": [0.0,1.0,0.0],
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [1.0, 0.0, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "cilindre2",
+  "type": "cylinder",
+  "center": [-50.0, 0.0, 0.0],
+  "radius": 0.01,
+  "h": 100,
+  "axis": [1.0,0.0,0.0],
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.0, 0.0, 1.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "cilindre3",
+  "type": "cylinder",
+  "center": [0.0, 0.0, -50.0],
+  "radius": 0.01,
+  "h": 100,
+  "axis": [0.0,0.0,1.0],
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.0, 1.0, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+}
+]
+}

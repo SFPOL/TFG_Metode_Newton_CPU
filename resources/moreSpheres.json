@@ -1,0 +1,54 @@
+{
+"scene": "OneSphere",
+"typeScene": "VIRTUAL",
+"objects": [
+{
+  "name": "Esfera 1",
+  "type": "sphere",
+  "center": [-1, 0.0, 0.0],
+  "radius": 0.5,
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.8, 0.4, 1.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0,
+    "opacity": 1.0
+    }
+},
+{
+"name": "Esfera 2",
+"type": "sphere",
+"center": [1, 0.5, 0.0],
+"radius": 0.3,
+"material": {
+  "type": "lambertian",
+  "ka": [0.2, 0.2, 0.2],
+  "kd": [0.8, 0.4, 1.0],
+  "ks": [1.0, 1.0, 1.0],
+  "shininess": 10.0,
+  "kt": [0.0, 0.0, 0.0],
+  "nut": 0.0,
+  "opacity": 1.0
+  }
+},
+{
+"name": "Esfera 3",
+"type": "sphere",
+"center": [0.0, 0.0, 0.0],
+"radius": 0.7,
+"material": {
+  "type": "lambertian",
+  "ka": [0.2, 0.2, 0.2],
+  "kd": [0.8, 0.4, 1.0],
+  "ks": [1.0, 1.0, 1.0],
+  "shininess": 10.0,
+  "kt": [0.0, 0.0, 0.0],
+  "nut": 0.0,
+  "opacity": 1.0
+  }
+}
+]
+}

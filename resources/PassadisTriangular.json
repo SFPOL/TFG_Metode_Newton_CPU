@@ -1,0 +1,70 @@
+{
+"scene": "PassadisInfinit",
+"typeScene": "VIRTUAL",
+"objects": [
+{
+  "name": "Esfera petita",
+  "type": "sphere",
+  "center": [0.0, 0.0, 0.0],
+  "radius": 0.4,
+  "material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.0, 0.0, 0.7],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "shininess2": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "PlaSostreEsquerra",
+  "type": "plane",
+  "point":  [-0.866025, -0.5, 0.0],
+  "normal": [ 1.299038, -0.75, 0.0],
+  "material": {
+    "type": "metal",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.5, 0.5, 0.5],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "shininess2": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "PlaTerra",
+  "type": "plane",
+  "point": [0.0, -0.5, 0.0],
+  "normal": [0.0, 1.0, 0.0],
+  "material": {
+    "type": "metal",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.5, 0.5, 0.5],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "shininess2": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+},
+{
+  "name": "PlaSostreDreta",
+  "type": "plane",
+  "point":  [ 0.866025, -0.5, 0.0],
+  "normal": [-1.299038, -0.75, 0.0],
+  "material": {
+    "type": "metal",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.5, 0.5, 0.5],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "shininess2": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    }
+}
+]
+}
